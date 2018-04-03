@@ -1,4 +1,4 @@
-# datasciencecoursera
+# Data Science Coursera Repo
 Repository created for the John Hopkins Coursera Data Science track
 
 ## Week 4 Folder
