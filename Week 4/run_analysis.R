@@ -86,11 +86,12 @@ all_data$y <- new_labels
 # this was done at the beggining of the data cleaning.
 names(all_data)
 
-## 5 ------ descriptive activity names  --------------------------------
+## 5 ------ independent tidy data set with the average of each variable  --------------------------------
 # column 562 is the y categorical label and will be excluded.
 all_data_means <- colMeans(all_data[,-562])
 
 # Save Tidy Dataset as CSV (this is a 67Mb file) run this to generate
 write.csv(all_data, file = "TidyDataSet.csv")
+write.table(all_data, file = "TidyDataSet.txt", row.names = FALSE)
 
 
